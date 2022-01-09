@@ -2,7 +2,7 @@
 
 ## C'est quoi ?
 
-Ce site codé sous VueJS récupère via une API, ces images sont envoyé par une application développé avec React Native
+Ce site codé sous VueJS récupère des images via une API développé pour ce projet, ces images sont tranmise à l'API par une application mobile développé sous React Native
 
 ## Le but du projet ?
 
