@@ -1,28 +1,85 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <header>
+      <button @click.prevent="loadPicture()">Refresh</button>
+    </header>
+    <main>
+      <section class="cards">
+        <card v-for="(picture, index) in pictures" :key="index" :picture="picture" />
+      </section>
+    </main>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import card from './components/card'
+import axios from "axios";
 export default {
   name: 'app',
-  components: {
-    HelloWorld
+  components:{
+    card
+  },
+  data() {
+    return {
+      pictures:[]
+    }
+  },
+  methods:{
+    loadPicture(){
+      axios.get('https://static.charly-e.com/apishib/wp-json/sh/v1/pictures').then(response => {
+        this.pictures = response.data;
+      })
+    }
+  },
+  mounted() {
+    this.loadPicture()
   }
 }
 </script>
 
 <style>
+body{
+  margin:0;
+  font-family: 'Montserrat', sans-serif;
+}
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin:0;
+}
+main{
+  display: flex;
+  justify-content: center;
+}
+header{
+  background-color: #F7A000;
+  width:100%;
+  height:80px;
+  display: flex;
+  align-items: center;
+}
+button{
+  margin-left:40px;
+  background-color: #ffffff;
+  border:none;
+  width:160px;
+  height:40px;
+  border-radius: 10px;
+  font-size:17px;
+  color:#000;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+}
+
+button:hover{
+  background-color: #ffd585;
+  cursor: pointer;
+}
+
+.cards{
+  width:96%;
+  display: flex;
+  flex-wrap: wrap;
 }
 </style>
