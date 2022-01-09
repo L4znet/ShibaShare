@@ -1,29 +1,19 @@
-![Vue.js Logo](https://github.com/vercel/vercel/blob/main/packages/frameworks/logos/vue.svg)
+# Shiba
 
-# Vue.js Example
+## C'est quoi ?
 
-This directory is a brief example of a [Vue.js](https://vuejs.org/) app that can be deployed with Vercel and zero configuration.
+Ce site codé sous VueJS récupère via une API, ces images sont envoyé par une application développé avec React Native
 
-## Deploy Your Own
+## Le but du projet ?
 
-Deploy your own Vue.js project with Vercel.
+J'ai créé ce projet pour continuer mon apprentissage de React Native, je cherchais un challenge intéressant : Faire communiquer une page web avec une application mobile.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/vercel/tree/main/examples/vue&template=vue)
 
-_Live Example: https://vue.now-examples.now.sh_
+## Tester le projet : 
 
-### How We Created This Example
+[Le site](https://www.shiba.charly-e.com/)
 
-To get started with Vue.js deployed with Vercel, you can use the [Vue CLI](https://cli.vuejs.org/guide/creating-a-project.html#vue-create) to initialize the project:
+[Télécharger l'app]()
 
-```shell
-$ vue create
-```
+### Vous préférez peut être un QR Code ?
 
-### Deploying From Your Terminal
-
-You can deploy your new Vue.js project with a single command from your terminal using [Vercel CLI](https://vercel.com/download):
-
-```shell
-$ vercel
-```
