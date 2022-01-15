@@ -13,7 +13,7 @@ J'ai créé ce projet pour continuer mon apprentissage de React Native, je cherc
 
 [Le site](https://www.shiba.charly-e.com/)
 
-[Télécharger l'app]()
+[Télécharger l'app](https://play.google.com/store/apps/details?id=com.laznet.Tinderinu)
 
 ### Vous préférez peut être un QR Code ?
 
