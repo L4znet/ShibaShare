@@ -1,4 +1,4 @@
-# Shiba
+# ShibaShare
 
 ## C'est quoi ?
 
